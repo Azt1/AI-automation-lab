@@ -1,17 +1,41 @@
 # AI Automation Lab
 
-Repositório de estudos e projetos práticos em Inteligência Artificial e Automação.
+> Laboratório prático para construir produtos de Inteligência Artificial e Automação com foco em problemas reais de negócio.
 
-## Objetivo
+## Sobre
 
-Construir, documentar e evoluir soluções reais de IA e automação diariamente.
+Este repositório registra minha evolução como desenvolvedor **Full Stack com foco em IA e Automação**. Cada entrega parte de um problema concreto, é documentada e evolui em incrementos pequenos e verificáveis.
 
-## Organização
+## O que vou construir
 
-- `src/` — código das aplicações
-- `tests/` — testes automatizados
-- `docs/` — decisões técnicas e documentação
+- Processamento inteligente de documentos com OCR e IA.
+- Agentes para suporte e consulta de bases de conhecimento.
+- Automação de fluxos entre APIs, e-mails e bancos de dados.
+- Ferramentas de monitoramento de execuções e falhas.
 
-## Primeiro projeto
+## Stack em evolução
 
-Em definição.
+`Python` · `FastAPI` · `React` · `TypeScript` · `PostgreSQL` · `APIs de IA` · `n8n` · `Docker` · `GitHub Actions`
+
+## Roadmap
+
+O plano de entregas está em [docs/roadmap.md](docs/roadmap.md). O progresso real de cada sessão fica em [docs/progress-log.md](docs/progress-log.md).
+
+## Estrutura
+
+```text
+src/        # Aplicações e serviços
+tests/      # Testes automatizados
+docs/       # Decisões, roadmap e registros de progresso
+```
+
+## Princípios do projeto
+
+- Commits pequenos, com uma mudança clara por vez.
+- Código acompanhado de documentação e testes quando aplicável.
+- Automação usada para resolver tarefas reais, não apenas como demonstração.
+- Progresso documentado com honestidade e contexto.
+
+---
+
+*A practical portfolio focused on building AI-powered automation products.*
