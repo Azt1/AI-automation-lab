@@ -21,6 +21,10 @@ Este repositório registra minha evolução como desenvolvedor **Full Stack com 
 
 O plano de entregas está em [docs/roadmap.md](docs/roadmap.md). O progresso real de cada sessão fica em [docs/progress-log.md](docs/progress-log.md).
 
+## Primeira entrega técnica
+
+O módulo `document_analyzer` começa o projeto **AI Document Processor**. Nesta etapa, ele identifica o provável tipo de um documento a partir do texto e extrai CPF, CNPJ, datas e valores em reais. A evolução natural é receber PDFs e imagens, aplicar OCR e usar IA para interpretar campos menos padronizados.
+
 ## Estrutura
 
 ```text

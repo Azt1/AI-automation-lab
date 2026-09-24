@@ -7,6 +7,7 @@ Este roadmap é um guia de aprendizado e entrega. As etapas só serão marcadas 
 - [x] Criar e publicar a estrutura do repositório.
 - [x] Definir foco de carreira: IA e Automação.
 - [ ] Configurar ambiente Python e qualidade de código.
+- [x] Criar o módulo inicial de análise de texto documental.
 - [ ] Criar a primeira API com FastAPI.
 - [ ] Adicionar testes automatizados e integração contínua.
 
