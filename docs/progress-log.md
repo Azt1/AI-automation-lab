@@ -14,3 +14,9 @@ Este arquivo registra entregas reais do projeto. Não é um calendário planejad
 - Implementação de classificação inicial para nota fiscal, comprovante e documento cadastral.
 - Extração local de CPF, CNPJ, datas e valores monetários.
 - Inclusão de testes para um texto de nota fiscal e um documento desconhecido.
+
+## 2026-09-25 — Uso do analisador pelo terminal
+
+- Configuração do pacote Python com `pyproject.toml`.
+- Criação de uma interface de linha de comando para analisar texto documental.
+- Saída estruturada em JSON para facilitar a integração com outros sistemas.

@@ -25,6 +25,19 @@ O plano de entregas está em [docs/roadmap.md](docs/roadmap.md). O progresso rea
 
 O módulo `document_analyzer` começa o projeto **AI Document Processor**. Nesta etapa, ele identifica o provável tipo de um documento a partir do texto e extrai CPF, CNPJ, datas e valores em reais. A evolução natural é receber PDFs e imagens, aplicar OCR e usar IA para interpretar campos menos padronizados.
 
+### Como executar localmente
+
+Após instalar o Python 3.11 ou superior:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -e ".[dev]"
+python -m document_analyzer --text "Nota Fiscal emitida em 25/09/2026. CNPJ 12.345.678/0001-95. Total R$ 1.250,00."
+```
+
+O comando retorna um JSON com o tipo provável de documento, confiança e campos encontrados.
+
 ## Estrutura
 
 ```text

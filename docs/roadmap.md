@@ -8,6 +8,7 @@ Este roadmap é um guia de aprendizado e entrega. As etapas só serão marcadas 
 - [x] Definir foco de carreira: IA e Automação.
 - [ ] Configurar ambiente Python e qualidade de código.
 - [x] Criar o módulo inicial de análise de texto documental.
+- [x] Criar uma interface de linha de comando para o analisador.
 - [ ] Criar a primeira API com FastAPI.
 - [ ] Adicionar testes automatizados e integração contínua.
 
