@@ -1,33 +1,40 @@
-# AI Automation Lab
+# AI Document Processor
 
-> Laboratório prático para construir produtos de Inteligência Artificial e Automação com foco em problemas reais de negócio.
+Esse é o primeiro projeto do meu laboratório de IA e automação.
 
-## Sobre
+A ideia é simples: receber o texto de um documento e transformar as informações importantes em dados organizados. É o tipo de tarefa que costuma tomar tempo quando feita manualmente.
 
-Este repositório registra minha evolução como desenvolvedor **Full Stack com foco em IA e Automação**. Cada entrega parte de um problema concreto, é documentada e evolui em incrementos pequenos e verificáveis.
+## O que já funciona
 
-## O que vou construir
+Por enquanto, o projeto trabalha com texto copiado de documentos. Ele tenta identificar se o texto parece ser uma nota fiscal, comprovante ou documento cadastral e procura por:
 
-- Processamento inteligente de documentos com OCR e IA.
-- Agentes para suporte e consulta de bases de conhecimento.
-- Automação de fluxos entre APIs, e-mails e bancos de dados.
-- Ferramentas de monitoramento de execuções e falhas.
+- CPF e CNPJ
+- datas
+- valores em reais
 
-## Stack em evolução
+Também retorna uma confiança inicial para a classificação. Se o documento não tiver sinais suficientes, ele fica como `desconhecido`.
 
-`Python` · `FastAPI` · `React` · `TypeScript` · `PostgreSQL` · `APIs de IA` · `n8n` · `Docker` · `GitHub Actions`
+## Exemplo
 
-## Roadmap
+Entrada:
 
-O plano de entregas está em [docs/roadmap.md](docs/roadmap.md). O progresso real de cada sessão fica em [docs/progress-log.md](docs/progress-log.md).
+```text
+Nota Fiscal emitida em 25/09/2026. CNPJ 12.345.678/0001-95. Total R$ 1.250,00.
+```
 
-## Primeira entrega técnica
+Saída esperada:
 
-O módulo `document_analyzer` começa o projeto **AI Document Processor**. Nesta etapa, ele identifica o provável tipo de um documento a partir do texto e extrai CPF, CNPJ, datas e valores em reais. A evolução natural é receber PDFs e imagens, aplicar OCR e usar IA para interpretar campos menos padronizados.
+```json
+{
+  "document_type": "nota_fiscal",
+  "confidence": 70,
+  "cnpj": ["12.345.678/0001-95"],
+  "dates": ["25/09/2026"],
+  "amounts_brl": ["1250.00"]
+}
+```
 
-### Como executar localmente
-
-Após instalar o Python 3.11 ou superior:
+## Rodar localmente
 
 ```bash
 python -m venv .venv
@@ -36,23 +43,11 @@ pip install -e ".[dev]"
 python -m document_analyzer --text "Nota Fiscal emitida em 25/09/2026. CNPJ 12.345.678/0001-95. Total R$ 1.250,00."
 ```
 
-O comando retorna um JSON com o tipo provável de documento, confiança e campos encontrados.
+## Próximos passos
 
-## Estrutura
+- Ler PDF e imagem usando OCR
+- Criar uma API com FastAPI
+- Adicionar uma tela para enviar o documento
+- Usar IA para lidar com documentos menos padronizados
 
-```text
-src/        # Aplicações e serviços
-tests/      # Testes automatizados
-docs/       # Decisões, roadmap e registros de progresso
-```
-
-## Princípios do projeto
-
-- Commits pequenos, com uma mudança clara por vez.
-- Código acompanhado de documentação e testes quando aplicável.
-- Automação usada para resolver tarefas reais, não apenas como demonstração.
-- Progresso documentado com honestidade e contexto.
-
----
-
-*A practical portfolio focused on building AI-powered automation products.*
+Os testes ficam na pasta `tests/` e o código principal está em `src/document_analyzer/`.

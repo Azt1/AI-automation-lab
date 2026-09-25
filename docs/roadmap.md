@@ -6,11 +6,12 @@ Este roadmap é um guia de aprendizado e entrega. As etapas só serão marcadas 
 
 - [x] Criar e publicar a estrutura do repositório.
 - [x] Definir foco de carreira: IA e Automação.
-- [ ] Configurar ambiente Python e qualidade de código.
+- [x] Configurar ambiente Python e qualidade de código.
 - [x] Criar o módulo inicial de análise de texto documental.
 - [x] Criar uma interface de linha de comando para o analisador.
 - [ ] Criar a primeira API com FastAPI.
-- [ ] Adicionar testes automatizados e integração contínua.
+- [x] Adicionar testes automatizados.
+- [ ] Configurar integração contínua.
 
 ## Fase 2 — Projeto 1: AI Document Processor
 

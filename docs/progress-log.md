@@ -20,3 +20,5 @@ Este arquivo registra entregas reais do projeto. Não é um calendário planejad
 - Configuração do pacote Python com `pyproject.toml`.
 - Criação de uma interface de linha de comando para analisar texto documental.
 - Saída estruturada em JSON para facilitar a integração com outros sistemas.
+- Instalação do Python 3.13 e criação do ambiente virtual local.
+- Execução dos testes: 2 aprovados.
