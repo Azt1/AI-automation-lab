@@ -4,16 +4,24 @@ import argparse
 import json
 
 from .analyzer import analyze_document
+from .reader import DocumentReadError, read_document_text
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Classifica texto documental e extrai campos básicos."
+        description="Classifica documentos e extrai campos básicos."
     )
-    parser.add_argument("--text", required=True, help="Texto extraído do documento.")
+    input_source = parser.add_mutually_exclusive_group(required=True)
+    input_source.add_argument("--text", help="Texto extraído do documento.")
+    input_source.add_argument("--file", help="Caminho para um arquivo PDF ou TXT.")
     args = parser.parse_args()
 
-    result = analyze_document(args.text)
+    try:
+        text = args.text if args.text is not None else read_document_text(args.file)
+    except DocumentReadError as error:
+        parser.error(str(error))
+
+    result = analyze_document(text)
     response = {
         "document_type": result.document_type,
         "confidence": result.confidence,

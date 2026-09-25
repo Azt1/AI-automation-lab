@@ -6,7 +6,7 @@ A ideia é simples: receber o texto de um documento e transformar as informaçõ
 
 ## O que já funciona
 
-Por enquanto, o projeto trabalha com texto copiado de documentos. Ele tenta identificar se o texto parece ser uma nota fiscal, comprovante ou documento cadastral e procura por:
+O projeto aceita texto copiado, arquivo `.txt` ou PDF com texto selecionável. Ele tenta identificar se o conteúdo parece ser uma nota fiscal, comprovante ou documento cadastral e procura por:
 
 - CPF e CNPJ
 - datas
@@ -43,9 +43,15 @@ pip install -e ".[dev]"
 python -m document_analyzer --text "Nota Fiscal emitida em 25/09/2026. CNPJ 12.345.678/0001-95. Total R$ 1.250,00."
 ```
 
+Para analisar um arquivo:
+
+```bash
+python -m document_analyzer --file "C:\caminho\para\nota-fiscal.pdf"
+```
+
 ## Próximos passos
 
-- Ler PDF e imagem usando OCR
+- Ler imagem e PDF escaneado usando OCR
 - Criar uma API com FastAPI
 - Adicionar uma tela para enviar o documento
 - Usar IA para lidar com documentos menos padronizados

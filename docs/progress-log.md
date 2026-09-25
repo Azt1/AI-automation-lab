@@ -21,4 +21,10 @@ Este arquivo registra entregas reais do projeto. Não é um calendário planejad
 - Criação de uma interface de linha de comando para analisar texto documental.
 - Saída estruturada em JSON para facilitar a integração com outros sistemas.
 - Instalação do Python 3.13 e criação do ambiente virtual local.
-- Execução dos testes: 2 aprovados.
+- Execução dos testes: 5 aprovados.
+
+## 2026-09-25 — Leitura de arquivos PDF
+
+- Adição de leitura de arquivos PDF com texto selecionável.
+- Suporte a arquivos `.txt` para testes e integrações simples.
+- Mensagem clara para PDFs escaneados, que ainda dependem da etapa de OCR.

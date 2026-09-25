@@ -15,8 +15,9 @@ Este roadmap é um guia de aprendizado e entrega. As etapas só serão marcadas 
 
 ## Fase 2 — Projeto 1: AI Document Processor
 
+- [x] Adicionar leitura de PDF com texto selecionável.
 - [ ] Criar endpoint para receber documentos.
-- [ ] Extrair texto de PDF e imagens com OCR.
+- [ ] Extrair texto de imagens e PDFs escaneados com OCR.
 - [ ] Usar IA para estruturar os dados extraídos.
 - [ ] Criar interface para revisão humana.
 - [ ] Registrar histórico e status de processamento.
