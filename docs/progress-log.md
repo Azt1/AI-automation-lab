@@ -28,3 +28,11 @@ Este arquivo registra entregas reais do projeto. Não é um calendário planejad
 - Adição de leitura de arquivos PDF com texto selecionável.
 - Suporte a arquivos `.txt` para testes e integrações simples.
 - Mensagem clara para PDFs escaneados, que ainda dependem da etapa de OCR.
+
+## 2026-09-26 — Primeira API
+
+- Criação da API com FastAPI.
+- Rota de saúde para verificar se o serviço está ativo.
+- Rota para analisar texto de documentos via HTTP.
+- Testes para rota de saúde, análise e validação de entrada.
+- Suíte completa executada: 8 testes aprovados.

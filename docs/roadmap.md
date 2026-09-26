@@ -9,7 +9,7 @@ Este roadmap é um guia de aprendizado e entrega. As etapas só serão marcadas 
 - [x] Configurar ambiente Python e qualidade de código.
 - [x] Criar o módulo inicial de análise de texto documental.
 - [x] Criar uma interface de linha de comando para o analisador.
-- [ ] Criar a primeira API com FastAPI.
+- [x] Criar a primeira API com FastAPI.
 - [x] Adicionar testes automatizados.
 - [ ] Configurar integração contínua.
 

@@ -49,10 +49,21 @@ Para analisar um arquivo:
 python -m document_analyzer --file "C:\caminho\para\nota-fiscal.pdf"
 ```
 
+## Usar pela API
+
+Inicie o servidor:
+
+```bash
+uvicorn document_analyzer.api:app --reload
+```
+
+Depois abra `http://127.0.0.1:8000/docs`. Essa página permite testar a API no navegador. A rota principal é `POST /api/v1/analyze` e recebe um JSON com o campo `text`.
+
 ## Próximos passos
 
 - Ler imagem e PDF escaneado usando OCR
 - Criar uma API com FastAPI
+- Receber PDF diretamente pela API
 - Adicionar uma tela para enviar o documento
 - Usar IA para lidar com documentos menos padronizados
 

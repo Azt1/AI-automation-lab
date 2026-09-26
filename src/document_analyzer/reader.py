@@ -1,16 +1,13 @@
-"""Leitura de arquivos antes da análise documental."""
-
 from pathlib import Path
 
 from pypdf import PdfReader
 
 
 class DocumentReadError(ValueError):
-    """Erro apresentado quando não é possível obter texto do arquivo."""
+    pass
 
 
 def read_document_text(file_path: str) -> str:
-    """Lê arquivos .txt ou PDFs que já possuem uma camada de texto."""
     path = Path(file_path)
 
     if not path.is_file():

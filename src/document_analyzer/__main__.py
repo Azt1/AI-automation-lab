@@ -1,5 +1,3 @@
-"""Interface de linha de comando para o analisador de documentos."""
-
 import argparse
 import json
 

@@ -1,5 +1,3 @@
-"""Regras iniciais para estruturar informações encontradas em documentos."""
-
 from dataclasses import dataclass
 from decimal import Decimal
 import re
@@ -14,8 +12,6 @@ DOCUMENT_KEYWORDS = {
 
 @dataclass(frozen=True)
 class AnalysisResult:
-    """Resultado estruturado de uma análise local de texto."""
-
     document_type: str
     confidence: int
     cpf: tuple[str, ...]
@@ -25,7 +21,6 @@ class AnalysisResult:
 
 
 def analyze_document(text: str) -> AnalysisResult:
-    """Classifica o texto e extrai padrões básicos sem depender de uma API externa."""
     normalized = text.casefold()
     matches = {
         document_type: sum(keyword in normalized for keyword in keywords)
